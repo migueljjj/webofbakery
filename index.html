@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>World Bakery</title>
+  
+</head>
+<body>
+  <header>
+    <h1>World Bakery</h1>
+    <nav>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">All Bakeries</a>
+    </nav>
+  </header>
+  <div class="slider">
+    <img src="images\image of bakery 01.jpg" height="300px"width="300px">
+    <img src="images\image of bakery 02.jpg"height="300px"width="300px">
+    <img src="images\image of bakery 03.jpg"height="300px"width="300px">
+  </div>
+  <div class="grid">
+    <div>
+      <img src="images\image of bakery 1.jpg" alt="Bakery 1">
+    </div>
+    <div>
+      <img src="images\image of bakery 2.jpg" alt="Bakery 2">
+    </div>
+    <div>
+      <img src="images\image of bakery 3.jpg" alt="Bakery 3">
+    </div>
+  </div>
+  <div class="grid">
+    <div>
+      <img src="images\image of bakery 4.jpg" alt="Bakery 4">
+    </div>
+    <div>
+      <img src="images\image of bakery 5.jpg" alt="Bakery 5">
+    </div>
+    <div>
+      <img src="images\image of bakery 6.jpg" alt="Bakery 6">
+    </div>
+  </div>
+</body>
+<footer>
+  <form id="order-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+  
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+  
+    <label for="item">Item:</label>
+    <select id="item" name="item" required>
+      <option value="">Select item</option>
+      <option value="cake">Cake</option>
+      <option value="bread">Bread</option>
+      <option value="pastry">Pastry</option>
+    </select>
+  
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" required>
+  
+    <button type="submit">Place order</button>
+  </form>
+
+  bakery world &copy;2023
+</footer>
+</html>

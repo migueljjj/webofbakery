@@ -1,0 +1,242 @@
+body {
+  background-image: linear-gradient(to bottom, #ffa07a, #ffb347);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: orange;
+      background-image: url("images/image of bakery 01.jpg"), url("images/image of bakery 02.jpg"), url("images/image of bakery 03.jpg");
+      background-repeat: no-repeat;
+      background-position: left top, center top, right top;
+      background-size: auto 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: orange;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 20px;
+    }
+    nav a:hover {
+      color: gray;
+    }
+
+    .slider img:nth-child(1) {
+      animation: moveLeftToRight 12s infinite;
+    }
+    
+    .slider img:nth-child(2) {
+      animation: moveLeftToRight 12s infinite;
+      animation-delay: 4s;
+    }
+    
+    .slider img:nth-child(3) {
+      animation: moveLeftToRight 12s infinite;
+      animation-delay: 8s;
+    }
+    
+    @keyframes moveLeftToRight {
+      0% {
+        opacity: 0;
+        transform: translateX(-100%);
+      }
+      10% {
+        opacity: 1;
+      }
+      90% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(100%);
+      }
+    }
+
+    .slider {
+      display: flex;
+      overflow: hidden;
+      position: relative;
+      height: 300px;
+    }
+    
+    .slider img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      position: absolute;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    
+    .slider img:nth-child(1) {
+      animation-name: slide1;
+    }
+    
+    .slider img:nth-child(2) {
+      animation-name: slide2;
+    }
+    
+    .slider img:nth-child(3) {
+      animation-name: slide3;
+    }
+    
+    @keyframes slide1 {
+      0% {
+        opacity: 0;
+        right: -300px;
+      }
+      5% {
+        opacity: 1;
+        right: 0;
+      }
+      20% {
+        opacity: 1;
+        right: 0;
+      }
+      25% {
+        opacity: 0;
+        right: 300px;
+      }
+      100% {
+        opacity: 0;
+        right: 300px;
+      }
+    }
+    
+    @keyframes slide2 {
+      0% {
+        opacity: 0;
+        right: -300px;
+      }
+      15% {
+        opacity: 0;
+        right: -300px;
+      }
+      20% {
+        opacity: 1;
+        right: 0;
+      }
+      35% {
+        opacity: 1;
+        right: 0;
+      }
+      40% {
+        opacity: 0;
+        right: 300px;
+      }
+      100% {
+        opacity: 0;
+        right: 300px;
+      }
+    }
+    
+    @keyframes slide3 {
+      0% {
+        opacity: 0;
+        right: -300px;
+      }
+      30% {
+        opacity: 0;
+        right: -300px;
+      }
+      35% {
+        opacity: 1;
+        right: 0;
+      }
+      50% {
+        opacity: 1;
+        right: 0;
+      }
+      55% {
+        opacity: 0;
+        right: 300px;
+      }
+      100% {
+        opacity: 0;
+        right: 300px;
+      }
+    }
+  
+    .grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin: 50px 0;
+    }
+    .grid img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px gray;
+    }
+    footer{
+      text-align: center;
+      color: black;
+      text size: 200px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 20px;
+      padding: 10px;
+      border: 1px solid gray;
+    }
+    
+    label {
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    input[type="number"] {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid gray;
+    }
+    
+    button[type="submit"] {
+      padding: 10px;
+      border-radius: 5px;
+      background-color: orange;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: darkorange;
+    }
+    
+    @media screen and (max-width: 768px) {
+      .grid {
+        flex-direction: column;
+      }
+      .grid img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  
+
